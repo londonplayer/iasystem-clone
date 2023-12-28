@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--color-primary: 197 170 113;
+		--color-secondary: 17 135 91;
+	}
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Poppins, sans-serif;
+}
+
+.navbar-container {
+	position: absolute;
+	height: 100%;
+	width: 30vh;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+
+	@apply bg-primary;
+}
+
+.navbar-header {
+	display: flex;
+	padding: 50px;
+}
